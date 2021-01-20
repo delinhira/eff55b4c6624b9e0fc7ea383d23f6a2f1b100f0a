@@ -1,15 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+
+//components
 import Text from "./components/Text";
 
-const ModalCart = styled.div`
-  position: fixed;
-  bottom: 0;
-  display: none;
-  width: 100%;
-`;
-
+// styled components
 const CartContainer = styled.div`
   width: inherit;
   margin: 8px;
@@ -24,6 +20,13 @@ const CartContainer = styled.div`
     display: flex;
     align-items: center;
   }
+`;
+
+const ModalCart = styled.div`
+  position: fixed;
+  bottom: 0;
+  display: none;
+  width: 100%;
 `;
 
 const Cart = (props) => {

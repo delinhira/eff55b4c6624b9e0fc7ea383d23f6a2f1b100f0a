@@ -1,6 +1,8 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import * as theme from "./style/theme";
+
+//components
 import CardList from "./layout/CardList";
 import MenuType from "./layout/MenuType";
 import Cart from "./layout/Cart";

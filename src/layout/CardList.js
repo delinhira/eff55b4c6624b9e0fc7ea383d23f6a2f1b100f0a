@@ -1,9 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+
+// components
 import Card from "./components/Card";
 import Text from "./components/Text";
 
+// images
+import img1 from "../images/img1.png";
+import img2 from "../images/img2.png";
+import img3 from "../images/img3.png";
+import img4 from "../images/img4.png";
+import img5 from "../images/img5.png";
+
+// styled components
 const CardListContainer = styled.div`
   margin-top: 150px;
   padding-top: 25px;
@@ -23,7 +33,7 @@ const CardList = (props) => {
       type: "Uptown Lunch",
       price: "35,000",
       ratings: "4.5",
-      image: "https://picsum.photos/300/200",
+      image: img1,
     },
     {
       id: 2,
@@ -32,7 +42,7 @@ const CardList = (props) => {
       type: "Uptown Lunch",
       price: "50,000",
       ratings: "4.5",
-      image: "https://picsum.photos/300/200",
+      image: img2,
     },
     {
       id: 3,
@@ -41,7 +51,7 @@ const CardList = (props) => {
       type: "Uptown Lunch",
       price: "45,000",
       ratings: "4.5",
-      image: "https://picsum.photos/300/200",
+      image: img3,
     },
     {
       id: 4,
@@ -50,7 +60,7 @@ const CardList = (props) => {
       type: "Uptown Lunch",
       price: "75,000",
       ratings: "4.5",
-      image: "https://picsum.photos/300/200",
+      image: img4,
     },
     {
       id: 5,
@@ -59,16 +69,9 @@ const CardList = (props) => {
       type: "Uptown Lunch",
       price: "25,000",
       ratings: "4.5",
-      image: "https://picsum.photos/300/200",
+      image: img5,
     },
   ];
-
-  // const marginBottom = () => {
-  //   if (props.cartModal) {
-  //     console.log(props.cartModal);
-  //     document.getElementById("cardListContainer").style.marginBottom = "5rem";
-  //   }
-  // }
 
   return (
     <CardListContainer

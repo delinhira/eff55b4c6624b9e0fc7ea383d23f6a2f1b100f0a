@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+
+// components
 import Text from "./Text";
 
+// styled components
 const DateContainer = styled.div`
   scroll-snap-type: x mandatory;
   padding: 8px 16px;
@@ -24,10 +27,7 @@ const DateItemContainer = styled.div`
 
   ${(props) => {
     if (props.disable) {
-      return `
-      color: ${props.theme.LightGray}
-
-      `;
+      return `color: ${props.theme.LightGray}`;
     }
   }};
 `;
@@ -46,8 +46,6 @@ const DateList = () => {
   const isWeekend = (day) => {
     if (day === 0 || day === 6) return true;
   };
-
-  // const dateSlider = document.getElementById("dateContainer");
 
   return (
     <DateContainer id="dateContainer">

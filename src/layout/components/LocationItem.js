@@ -1,8 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+
+// components
 import Text from "./Text";
 
+// styled components
 const LocationContainer = styled.div`
   display: flex;
   align-items: center;

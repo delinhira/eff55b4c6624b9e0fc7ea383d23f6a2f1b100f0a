@@ -2,20 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 
-const MenuTypeContainer = styled.div`
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 0;
-`;
-
-const MenuTypeContent = styled.div`
-  margin-top: 123px;
-  padding: 8px 16px;
-  background-color: white;
-`;
-
+// styled components
 const MenuButton = styled.button`
   font-weight: normal;
   width: 50%;
@@ -34,6 +21,20 @@ const MenuButton = styled.button`
       `;
     }
   }}
+`;
+
+const MenuTypeContainer = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 0;
+`;
+
+const MenuTypeContent = styled.div`
+  margin-top: 123px;
+  padding: 8px 16px;
+  background-color: white;
 `;
 
 const MenuType = (props) => {

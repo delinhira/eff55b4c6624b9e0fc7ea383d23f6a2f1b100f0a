@@ -1,8 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+// components
 import LocationBar from "./components/LocationBar";
 import DateList from "./components/DateList";
-import styled from "styled-components";
 
+// styled components
 const NavBarContainer = styled.div`
   position: fixed;
   top: 0;

@@ -1,8 +1,31 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { connect } from "react-redux";
+
+// components
 import Text from "./components/Text";
 import LocationItem from "./components/LocationItem";
-import { connect } from "react-redux";
+
+// styled components
+const Input = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border: 1px solid ${(props) => props.theme.LightGray};
+  border-radius: 3px;
+  margin-bottom: 8px;
+
+  i {
+    font-size: 16px;
+    color: ${(props) => props.theme.Red};
+  }
+  input {
+    border: none;
+    padding: 8px 16px;
+    width: 100%;
+    color: ${(props) => props.theme.DarkGray};
+  }
+`;
 
 const ModalContainer = styled.div`
   z-index: 1;
@@ -30,26 +53,6 @@ const Modal = styled.div`
 
   .title {
     margin: 16px 0;
-  }
-`;
-
-const Input = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 0 8px;
-  border: 1px solid ${(props) => props.theme.LightGray};
-  border-radius: 3px;
-  margin-bottom: 8px;
-
-  i {
-    font-size: 16px;
-    color: ${(props) => props.theme.Red};
-  }
-  input {
-    border: none;
-    padding: 8px 16px;
-    width: 100%;
-    color: ${(props) => props.theme.DarkGray};
   }
 `;
 

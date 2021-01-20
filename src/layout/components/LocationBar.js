@@ -2,8 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 
+// components
 import Text from "./Text";
 
+// styled components
 const LocationContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -35,7 +37,6 @@ const LocationBar = (props) => {
   return (
     <LocationContainer>
       <i class="material-icons-round back">west</i>
-      {/* onclick= modal toggle */}
       <LocationContent onClick={props.toggleModal}>
         <Text uppercase size="sm" color="gray">
           Alamat Pengiriman
