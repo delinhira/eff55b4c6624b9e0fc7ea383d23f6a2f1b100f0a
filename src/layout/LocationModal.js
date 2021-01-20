@@ -91,7 +91,7 @@ const LocationModal = (props) => {
     <ModalContainer id="modal">
       <Modal>
         <i
-          class="material-icons-round close-button"
+          className="material-icons-round close-button"
           onClick={props.toggleModal}
         >
           close
@@ -100,7 +100,7 @@ const LocationModal = (props) => {
           Cek makanan yang tersedia di lokasi kamu!
         </Text>
         <Input>
-          <i class="material-icons-round">place</i>
+          <i className="material-icons-round">place</i>
           <input
             id="locationInput"
             type="text"

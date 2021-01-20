@@ -36,7 +36,7 @@ const LocationName = styled.div`
 const LocationBar = (props) => {
   return (
     <LocationContainer>
-      <i class="material-icons-round back">west</i>
+      <i className="material-icons-round back">west</i>
       <LocationContent onClick={props.toggleModal}>
         <Text uppercase size="sm" color="gray">
           Alamat Pengiriman
@@ -45,7 +45,7 @@ const LocationBar = (props) => {
           <Text bold size="lg">
             {props.locationName}
           </Text>
-          <i class="material-icons-round">expand_more</i>
+          <i className="material-icons-round">expand_more</i>
         </LocationName>
       </LocationContent>
     </LocationContainer>

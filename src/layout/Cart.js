@@ -30,13 +30,10 @@ const ModalCart = styled.div`
 `;
 
 const Cart = (props) => {
-  console.log(props.totalItems);
   if (props.totalItems > 0) {
     console.log(">0");
     document.querySelector("#modalCart").style.display = "flex";
   }
-
-  // document.getElementById("cart").style.display = "block";
 
   return (
     <ModalCart id="modalCart">
